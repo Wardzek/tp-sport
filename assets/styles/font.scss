@@ -1,0 +1,156 @@
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-Bold.eot');
+    src: url('../fonts/KoHo/KoHo-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-Bold.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-Bold.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-Bold.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-Bold.svg#KoHo-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-ExtraLight.eot');
+    src: url('../fonts/KoHo/KoHo-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-ExtraLight.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-ExtraLight.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-ExtraLight.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-ExtraLight.svg#KoHo-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-BoldItalic.eot');
+    src: url('../fonts/KoHo/KoHo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-BoldItalic.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-BoldItalic.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-BoldItalic.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-BoldItalic.svg#KoHo-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-SemiBold.eot');
+    src: url('../fonts/KoHo/KoHo-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-SemiBold.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-SemiBold.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-SemiBold.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-SemiBold.svg#KoHo-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-ExtraLightItalic.eot');
+    src: url('../fonts/KoHo/KoHo-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-ExtraLightItalic.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-ExtraLightItalic.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-ExtraLightItalic.svg#KoHo-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-Italic.eot');
+    src: url('../fonts/KoHo/KoHo-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-Italic.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-Italic.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-Italic.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-Italic.svg#KoHo-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-SemiBoldItalic.eot');
+    src: url('../fonts/KoHo/KoHo-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-SemiBoldItalic.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-SemiBoldItalic.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-SemiBoldItalic.svg#KoHo-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-Regular.eot');
+    src: url('../fonts/KoHo/KoHo-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-Regular.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-Regular.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-Regular.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-Regular.svg#KoHo-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-LightItalic.eot');
+    src: url('../fonts/KoHo/KoHo-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-LightItalic.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-LightItalic.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-LightItalic.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-LightItalic.svg#KoHo-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-Medium.eot');
+    src: url('../fonts/KoHo/KoHo-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-Medium.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-Medium.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-Medium.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-Medium.svg#KoHo-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-Light.eot');
+    src: url('../fonts/KoHo/KoHo-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-Light.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-Light.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-Light.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-Light.svg#KoHo-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $main-font;
+    src: url('../fonts/KoHo/KoHo-MediumItalic.eot');
+    src: url('../fonts/KoHo/KoHo-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KoHo/KoHo-MediumItalic.woff2') format('woff2'),
+    url('../fonts/KoHo/KoHo-MediumItalic.woff') format('woff'),
+    url('../fonts/KoHo/KoHo-MediumItalic.ttf') format('truetype'),
+    url('../fonts/KoHo/KoHo-MediumItalic.svg#KoHo-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

@@ -1,0 +1,14 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+@import 'variables';
+@import 'font';
+@import 'bases';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/filters';
+@import 'components/team-card';
+@import 'components/sport-card';

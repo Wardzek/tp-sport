@@ -1,0 +1,12 @@
+<a href="{{ path('app_sport_details', {id: sport.id}) }}" class="sport-card box-shadow border-radius {{ card_classes | default('') }}">
+    <div class="d-flex">
+        <h3 class="team-name">{{ sport.name }}</h3>
+    </div>
+    <div class="d-flex justify-content-center aligns-items-center">
+        <i class="fa-solid fa-hockey-puck icon"></i>
+    </div>
+    <div class="d-flex justify-content-between mb-3">
+        <span><strong>Équipes :</strong></span>
+        <span class="text-end">{{ sport.teams.count() }}</span>
+    </div>
+</a>

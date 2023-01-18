@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block main %}
+    {% set colors = ['gold', 'silver', 'bronze'] %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pb-3">
+                <h2 class="title m-0">Les 3 dernières équipes ajoutées :</h2>
+            </div>
+            {% for team in teams %}
+                <div class="col-12 col-md-4 pb-3">
+                        {% include 'partials/_team_card.html.twig' with { 'card_classes': colors[loop.index0] } %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="row">
+            <div class="col-12 pb-3">
+                <h2 class="title m-0">Les 3 équipes avec le plus de membres :</h2>
+            </div>
+            {% for team in teamss %}
+                <div class="col-12 col-md-4 pb-3">
+                    {% include 'partials/_team_card.html.twig' with { 'card_classes': colors[loop.index0] } %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

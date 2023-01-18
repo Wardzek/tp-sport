@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Édition équipe{% endblock %}
+
+{% block main_class %}teams-edit{% endblock %}
+
+{% block main %}
+    {{ form_start(form) }}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="box-shadow border-radius p-3">
+                                {{ form_row(form.name) }}
+                                {{ form_row(form.shortname) }}
+                                {{ form_row(form.sport) }}
+                                {{ form_row(form.athetes) }}
+                        <div class="col-12">
+                            <div class="py-4 px-3 box-shadow border-radius">
+                                <button type="submit" class="solid-btn me-3 my-2">VALIDER</button>
+                                <a href="{{ path('app_teams') }}" class="solid-btn danger me-3 my-2">ANNULER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ form_end(form) }}
+{% endblock %}
+

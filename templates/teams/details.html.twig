@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails équipe{% endblock %}
+
+{% block main_class %}team-details{% endblock %}
+
+{% block main %}
+    <div class="container-fluid">
+        <div class="row g-3">
+            <div class="col-12 col-lg-6">
+                {% include('partials/_team_card.html.twig') %}
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="members box-shadow border-radius p-3">
+                    <h3 class="title">Membres :</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            {% for athete in team.athetes %}
+                                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    {{ athete.lastname }}
+                                    {{ athete.firstname }}
+                                    {{ athete.birthAt|date('d/m/Y') }}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="py-4 px-3 box-shadow border-radius">
+                    <a href="{{ path('edit_teams', {id: team.id}) }}" class="solid-btn me-3">ÉDITER</a>
+                    <a href="{{ path('delete_teams', {id: team.id}) }}" class="solid-btn danger me-3" onclick="return confirm('Attention cette team sera définitivement supprimée')" >SUPPRIMMER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

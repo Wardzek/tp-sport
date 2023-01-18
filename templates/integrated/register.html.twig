@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block main_class %}register{% endblock %}
+
+{% block main %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <form class="box-shadow border-radius p-3 row mx-0" id="registerForm">
+                            <div class="col-12 my-2">
+                                <label for="email" class="form-label">Email :</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="col-12 col-md-6 my-2">
+                                <label for="pwd" class="form-label">Prénom :</label>
+                                <input type="text" class="form-control" id="pwd">
+                            </div>
+                            <div class="col-12 col-md-6 my-2">
+                                <label for="pwd" class="form-label">Nom :</label>
+                                <input type="text" class="form-control" id="pwd">
+                            </div>
+                            <div class="col-12 my-2">
+                                <label for="pwd" class="form-label">Mot de passe :</label>
+                                <input type="text" class="form-control" id="pwd">
+                            </div>
+                            <div class="col-12 my-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="terms">
+                                    <label class="form-check-label" for="terms">
+                                        Accepter les termes
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <div class="py-4 px-3 box-shadow border-radius">
+                            <button type="submit" form="registerForm" class="solid-btn me-3 my-2">S'INSCRIRE</button>
+                            <a href="#" class="solid-btn danger me-3 my-2">ANNULER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

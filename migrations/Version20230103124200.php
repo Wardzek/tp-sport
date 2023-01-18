@@ -1,0 +1,43 @@
+<?php
+
+declare(strict_types=1);
+
+namespace DoctrineMigrations;
+
+use Doctrine\DBAL\Schema\Schema;
+use Doctrine\Migrations\AbstractMigration;
+
+/**
+ * Auto-generated Migration: Please modify to your needs!
+ */
+final class Version20230103124200 extends AbstractMigration
+{
+    public function getDescription(): string
+    {
+        return '';
+    }
+
+    public function up(Schema $schema): void
+    {
+        // this up() migration is auto-generated, please modify it to your needs
+        $this->addSql('CREATE TABLE messenger_messages (id BIGINT AUTO_INCREMENT NOT NULL, body LONGTEXT NOT NULL, headers LONGTEXT NOT NULL, queue_name VARCHAR(190) NOT NULL, created_at DATETIME NOT NULL, available_at DATETIME NOT NULL, delivered_at DATETIME DEFAULT NULL, INDEX IDX_75EA56E0FB7336F0 (queue_name), INDEX IDX_75EA56E0E3BD61CE (available_at), INDEX IDX_75EA56E016BA31DB (delivered_at), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
+        $this->addSql('ALTER TABLE athete ADD team_id INT DEFAULT NULL');
+        $this->addSql('ALTER TABLE athete ADD CONSTRAINT FK_B83DC451296CD8AE FOREIGN KEY (team_id) REFERENCES team (id)');
+        $this->addSql('CREATE INDEX IDX_B83DC451296CD8AE ON athete (team_id)');
+        $this->addSql('ALTER TABLE sport ADD team_id INT DEFAULT NULL');
+        $this->addSql('ALTER TABLE sport ADD CONSTRAINT FK_1A85EFD2296CD8AE FOREIGN KEY (team_id) REFERENCES team (id)');
+        $this->addSql('CREATE INDEX IDX_1A85EFD2296CD8AE ON sport (team_id)');
+    }
+
+    public function down(Schema $schema): void
+    {
+        // this down() migration is auto-generated, please modify it to your needs
+        $this->addSql('DROP TABLE messenger_messages');
+        $this->addSql('ALTER TABLE athete DROP FOREIGN KEY FK_B83DC451296CD8AE');
+        $this->addSql('DROP INDEX IDX_B83DC451296CD8AE ON athete');
+        $this->addSql('ALTER TABLE athete DROP team_id');
+        $this->addSql('ALTER TABLE sport DROP FOREIGN KEY FK_1A85EFD2296CD8AE');
+        $this->addSql('DROP INDEX IDX_1A85EFD2296CD8AE ON sport');
+        $this->addSql('ALTER TABLE sport DROP team_id');
+    }
+}

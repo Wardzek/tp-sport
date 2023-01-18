@@ -1,0 +1,27 @@
+.team-card {
+    background-color: var(--main-color);
+    padding: 0.5rem 1rem 1.5rem 1rem;
+    display: block;
+    text-decoration: unset;
+
+    .team-name {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        font-size: 200px;
+    }
+
+    &.gold {
+        background-color: var(--gold-color);
+    }
+
+    &.silver {
+        background-color: var(--silver-color);
+        color: var(--main-color);
+    }
+
+    &.bronze {
+        background-color: var(--bronze-color);
+    }
+}

@@ -1,0 +1,14 @@
+<a href="{{ path('app_teams_details', {id: team.id})  }}" class="team-card box-shadow border-radius {{ card_classes | default('') }}">
+
+    <div class="d-flex justify-content-between align-items-center">
+        <h3 class="team-name">{{ team.name }}</h3>
+        <span class="text-end">{{ team.sport.name }}</span>
+    </div>
+    <div class="d-flex justify-content-center aligns-items-center">
+        <i class="fa-solid fa-hockey-puck icon"></i>
+    </div>
+    <div class="d-flex justify-content-between">
+        <span><strong>{{ team.athetes.count() }}</strong></span>
+        <span><strong>{{ team.createdAt|date('d/m/Y') }}</strong></span>
+    </div>
+</a>

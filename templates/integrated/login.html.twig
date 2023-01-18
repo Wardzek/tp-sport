@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block main_class %}login{% endblock %}
+
+{% block main %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <form class="box-shadow border-radius p-3" id="loginForm">
+                            <div class="my-2">
+                                <label for="email" class="form-label">Email :</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="my-2">
+                                <label for="pwd" class="form-label">Mot de passe :</label>
+                                <input type="text" class="form-control" id="pwd">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <div class="py-4 px-3 box-shadow border-radius">
+                            <button type="submit" form="loginForm" class="solid-btn me-3 my-2">CONNEXION</button>
+                            <a href="#" class="me-3 text-decoration-underline my-2">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
